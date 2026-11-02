@@ -1,0 +1,6 @@
+name: DeepCombat
+version: '${version}'
+main: io.github.dbstjr3377.deepcombat.DeepCombat
+api-version: '${apiVersion}'
+description: Deep Combat plugin
+authors: [dbstjr3377]
