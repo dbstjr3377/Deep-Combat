@@ -21,7 +21,15 @@ jobs:
       - name: Build plugin jar
         run: ./gradlew build
 
-      - uses: actions/upload-artifact@v5
+      - name: Show jar contents
+        run: |
+          for jar in build/libs/*.jar; do
+            echo "== $jar"
+            unzip -l "$jar"
+            unzip -p "$jar" plugin.yml
+          done
+
+      - uses: actions/upload-artifact@v6
         with:
           name: DeepCombat
           path: build/libs/*.jar
