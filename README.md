@@ -18,6 +18,11 @@ Minecraft Paper 서버용 플러그인입니다.
 
 빌드된 jar는 `build/libs/`에 생성됩니다. 서버의 `plugins/` 폴더에 넣어 사용합니다.
 
+### GitHub Actions에서 받기
+
+푸시할 때마다 GitHub Actions가 자동으로 jar를 빌드합니다.
+저장소의 **Actions** 탭 → 원하는 실행 기록 → 아래쪽 **Artifacts**의 `DeepCombat`을 내려받아 압축을 풀면 jar가 들어 있습니다.
+
 ## 구조
 
 ```
